@@ -82,8 +82,8 @@ const featuredProducts = [
     },
     {
         name: 'Tirante tipo moño con rondana',
-        description: 'Moño para cimbra con rondana de neopreno, de acero de alto carbón (5.8 mm), carga de 1,350 kg y resistencia de 2,200 kg.',
-        image: 'https://placehold.co/600x400',
+        description: 'Moño para cimbra con rondana de neopreno, elaborado con acero de alto carbón de 5.8 mm de diámetro, con capacidad de carga de 1,350 kg y resistencia máxima de 2,200 kg.',
+        image: 'https://cimbrayaccesorios.com.mx/Image/MONO-DE-20CM-CON-NEOPRENO.png',
         hint: 'formwork tie',
         icon: Anchor
     },
@@ -96,7 +96,7 @@ const featuredProducts = [
     },
     {
         name: 'Banda de PVC negra ojillada',
-        description: 'Sello retenedor de agua de 25 ml. Cinta de PVC con bulbo central y laterales estriados para máxima adherencia.',
+        description: 'Sello retenedor de agua con ojillos, negro de 25 ml, elaborado a base de cloruro de polivinilo en forma de cinta, con bulbo central y laterales estriados.',
         image: 'https://placehold.co/600x400',
         hint: 'pvc waterstop',
         icon: Waves
@@ -150,12 +150,12 @@ const testimonials = [
 ];
 
 const galleryImages = [
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.08 PM.jpeg', alt: 'Puntales en obra de gran altura', hint: 'construction site' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.08 PM.jpeg', alt: 'Puntales en obra de gran altura', hint: 'construction site', className: 'md:col-span-2 md:row-span-2' },
     { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.07 PM.jpeg', alt: 'Almacén de puntales metálicos', hint: 'construction equipment' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.06 PM.jpeg', alt: 'Detalle de puntal de acero reforzado', hint: 'steel props' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.05 PM.jpeg', alt: 'Trabajadores ajustando puntales', hint: 'construction workers' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.04 PM.jpeg', alt: 'Vista panorámica de cimbra con puntales', hint: 'formwork structure' },
     { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.03 PM.jpeg', alt: 'Puntales listos para entrega', hint: 'building materials' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.04 PM.jpeg', alt: 'Vista panorámica de cimbra con puntales', hint: 'formwork structure', className: 'md:col-span-2' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.05 PM.jpeg', alt: 'Trabajadores ajustando puntales', hint: 'construction workers' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.06 PM.jpeg', alt: 'Detalle de puntal de acero reforzado', hint: 'steel props' },
 ];
 
 export default function Home() {
@@ -354,7 +354,7 @@ export default function Home() {
             </div>
         </section>
         
-        <section id="galeria" className="py-16 md:py-24 px-4 bg-secondary/30">
+        <section id="galeria" className="py-12 md:py-16 px-4 bg-secondary/30">
           <div className="container mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl font-bold text-primary">Nuestros Productos en Acción</h2>
@@ -362,38 +362,23 @@ export default function Home() {
                 Vea la calidad y versatilidad de nuestros puntales en proyectos de construcción reales.
               </p>
             </div>
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-               plugins={[Autoplay({ delay: 3000, stopOnInteraction: true })]}
-              className="w-full max-w-5xl mx-auto"
-            >
-              <CarouselContent>
-                {galleryImages.map((image, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-2">
-                      <Card className="overflow-hidden group">
-                        <CardContent className="p-0 relative">
-                          <Image 
-                            src={image.src} 
-                            alt={image.alt} 
-                            width={600} 
-                            height={400} 
-                            className="object-cover aspect-[3/2] w-full h-full transition-transform duration-300 group-hover:scale-105" 
-                            data-ai-hint={image.hint} 
-                          />
-                           <div className="absolute inset-0 bg-black/20"></div>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="ml-12" />
-              <CarouselNext className="mr-12" />
-            </Carousel>
+            <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[250px] gap-4">
+              {galleryImages.map((image, index) => (
+                <div key={index} className={cn("group relative overflow-hidden rounded-lg shadow-lg", image.className)}>
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
+                    data-ai-hint={image.hint}
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                  <div className="absolute inset-0 flex items-end p-4">
+                    <p className="text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">{image.alt}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
         
