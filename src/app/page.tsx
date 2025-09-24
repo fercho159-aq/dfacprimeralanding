@@ -97,14 +97,14 @@ const featuredProducts = [
     {
         name: 'Banda de PVC negra ojillada',
         description: 'Sello retenedor de agua con ojillos, negro de 25 ml, elaborado a base de cloruro de polivinilo en forma de cinta, con bulbo central y laterales estriados.',
-        image: 'https://placehold.co/600x400',
+        image: 'https://cimbrayaccesorios.com.mx/Image/BOJN4-3.jpg',
         hint: 'pvc waterstop',
         icon: Waves
     },
     {
         name: 'Viga H-20 para Cimbra',
         description: 'Fabricada con madera de alta calidad y un diseño robusto, nuestra viga H-20 garantiza la máxima eficiencia y seguridad en sus proyectos de construcción. El tapón protector integrado aumenta su durabilidad.',
-        image: 'https://placehold.co/600x400',
+        image: 'https://www.mediafacile.net/edifacilecom/0/0/4/4042-1-101987-20230926085429-b.jpg',
         hint: 'h20 beam',
         icon: Building2
     }
@@ -592,5 +592,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
