@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { puntalesData, type Puntal } from '@/lib/data';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Slider } from '@/components/ui/slider';
 import {
   Table,
@@ -31,8 +31,10 @@ import {
   Ruler,
   ChevronRight,
   MoveVertical,
+  MessageSquare,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
 
 
 const SpecItem = ({ icon: Icon, label, value }: { icon: React.ElementType, label: string, value: string | number }) => (
@@ -99,7 +101,11 @@ const PuntalAnimation = ({ model, height }: { model: Puntal, height: number }) =
     );
 };
 
-export default function PuntalSelector() {
+interface PuntalSelectorProps {
+  onCtaClick: () => void;
+}
+
+export default function PuntalSelector({ onCtaClick }: PuntalSelectorProps) {
   const [modelIndex, setModelIndex] = useState(0);
   const [currentHeight, setCurrentHeight] = useState(puntalesData[0].minHeight);
   const [maxLoad, setMaxLoad] = useState(0);
@@ -260,6 +266,21 @@ export default function PuntalSelector() {
                 ))}
               </TableBody>
             </Table>
+          </CardContent>
+        </Card>
+
+        <Card className="shadow-lg border-primary/50 border-2 text-center">
+          <CardHeader>
+            <CardTitle>¿Necesitas Ayuda o una Cotización?</CardTitle>
+            <CardDescription>
+              Nuestro equipo de expertos está listo para asesorarte.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Button size="lg" onClick={onCtaClick} className="w-full">
+              <MessageSquare className="mr-2 h-5 w-5" />
+              Contactar a un Asesor
+            </Button>
           </CardContent>
         </Card>
 

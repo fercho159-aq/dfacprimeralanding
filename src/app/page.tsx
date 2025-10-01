@@ -305,7 +305,7 @@ export default function Home() {
                 Selecciona el modelo que necesitas y ajusta la altura para ver la capacidad de carga. ¡Obtén una cotización al instante!
               </p>
             </div>
-            <PuntalSelector />
+            <PuntalSelector onCtaClick={() => setIsModalOpen(true)} />
           </div>
         </section>
 
@@ -594,5 +594,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
