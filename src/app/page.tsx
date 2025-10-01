@@ -162,8 +162,10 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isUrgentModalOpen, setIsUrgentModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
   useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
     const timer = setTimeout(() => {
       // Show the modal only once per session
       if (!sessionStorage.getItem('urgentModalShown')) {
@@ -558,7 +560,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center text-xs text-muted-foreground mt-8 border-t border-border/40 pt-6">
-            <p>&copy; {new Date().getFullYear()} DFAC. Todos los derechos reservados. | <a href="#" className="hover:underline">Aviso de Privacidad</a></p>
+            <p>&copy; {currentYear} DFAC. Todos los derechos reservados. | <a href="#" className="hover:underline">Aviso de Privacidad</a></p>
           </div>
         </div>
       </footer>
@@ -592,3 +594,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
