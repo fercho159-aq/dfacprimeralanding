@@ -18,9 +18,9 @@ interface ContactModalProps {
 }
 
 const phoneNumbers = [
-  { display: "(442) 251-7169", tel: "+524422517169" },
-  { display: "(442) 251-7168", tel: "+524422517168" },
-  { display: "(442) 155-0415", tel: "+524421550415" },
+  { display: "(442) 251 7169", tel: "+524422517169" },
+  { display: "(442) 251 7168", tel: "+524422517168" },
+  { display: "(442) 155 0415", tel: "+524421550415" },
 ];
 
 export function ContactModal({ isOpen, onOpenChange }: ContactModalProps) {
@@ -56,4 +56,3 @@ export function ContactModal({ isOpen, onOpenChange }: ContactModalProps) {
     </Dialog>
   );
 }
-

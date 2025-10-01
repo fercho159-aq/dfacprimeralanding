@@ -114,7 +114,7 @@ const heroFeatures = [
     {
         icon: Clock,
         title: "Entrega 24h",
-        description: "En CDMX y área metropolitana"
+        description: "En Querétaro y área metropolitana"
     },
     {
         icon: PackageCheck,
@@ -124,7 +124,7 @@ const heroFeatures = [
     {
         icon: Truck,
         title: "Flete Gratis",
-        description: "En CDMX y Zona Metropolitana"
+        description: "En Querétaro y Zona Metropolitana"
     }
 ];
 
@@ -515,7 +515,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left items-start">
             <div className="md:col-span-1">
                <Image src="https://cimbrayaccesorios.com.mx/wp-content/uploads/2020/09/Recurso-2.png.webp" alt="DFAC Accesorios para Cimbras Logo" width={180} height={40} className="h-10 w-auto mx-auto md:mx-0" />
-              <p className="text-sm mt-4">Cuauhtémoc 105, San Pedro Iztacalco, Iztacalco, 08220 Ciudad de México, CDMX</p>
+              <p className="text-sm mt-4">Querétaro, Qro., México</p>
               <p className="text-sm">ventas@cimbrayaccesorios.com.mx</p>
             </div>
             <div>
@@ -533,15 +533,15 @@ export default function Home() {
               <div className="flex flex-col items-center md:items-start gap-2 text-sm">
                  <a href="tel:+524422517169" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Phone className="w-4 h-4" />
-                  <span>(442) 251-7169</span>
+                  <span>(442) 251 7169</span>
                 </a>
                  <a href="tel:+524422517168" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Phone className="w-4 h-4" />
-                  <span>(442) 251-7168</span>
+                  <span>(442) 251 7168</span>
                 </a>
                  <a href="tel:+524421550415" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Phone className="w-4 h-4" />
-                  <span>(442) 155-0415</span>
+                  <span>(442) 155 0415</span>
                 </a>
               </div>
             </div>
@@ -594,4 +594,3 @@ export default function Home() {
     </div>
   );
 }
-
