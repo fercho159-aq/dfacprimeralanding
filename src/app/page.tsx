@@ -162,7 +162,7 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isUrgentModalOpen, setIsUrgentModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
@@ -501,9 +501,9 @@ export default function Home() {
               <Button size="lg" variant="secondary" onClick={() => setIsModalOpen(true)}>
                 <MessageSquare className="mr-2 h-5 w-5"/> Solicitar Cotización
               </Button>
-              <a href="tel:+525525989751" className="flex items-center gap-2 hover:underline text-lg">
+              <a href="tel:+524422517169" className="flex items-center gap-2 hover:underline text-lg">
                 <Phone className="w-5 h-5" />
-                <span>Llámanos: (55) 2598-9751</span>
+                <span>Llámanos: (442) 251-7169</span>
               </a>
             </div>
           </div>
@@ -529,19 +529,19 @@ export default function Home() {
                </nav>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">Contacto Directo</h3>
+              <h3 className="font-bold text-lg mb-2">Contacto Directo (Querétaro)</h3>
               <div className="flex flex-col items-center md:items-start gap-2 text-sm">
-                 <a href="tel:+525525989751" className="flex items-center gap-2 hover:text-primary transition-colors">
+                 <a href="tel:+524422517169" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Phone className="w-4 h-4" />
-                  <span>(55) 2598-9751</span>
+                  <span>(442) 251-7169</span>
                 </a>
-                 <a href="tel:+525541673745" className="flex items-center gap-2 hover:text-primary transition-colors">
+                 <a href="tel:+524422517168" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Phone className="w-4 h-4" />
-                  <span>(55) 4167-3745</span>
+                  <span>(442) 251-7168</span>
                 </a>
-                 <a href="tel:+525555715084" className="flex items-center gap-2 hover:text-primary transition-colors">
+                 <a href="tel:+524421550415" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Phone className="w-4 h-4" />
-                  <span>(55) 5571-5084</span>
+                  <span>(442) 155-0415</span>
                 </a>
               </div>
             </div>
@@ -574,7 +574,7 @@ export default function Home() {
             "rounded-full shadow-lg p-4 h-16 w-16 bg-green-500 hover:bg-green-600"
           )}
         >
-          <a href="https://wa.me/5215549414017?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización." target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/5214422517169?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización." target="_blank" rel="noopener noreferrer">
             <MessageSquare className="h-7 w-7 text-white" />
             <span className="sr-only">Contactar por WhatsApp</span>
           </a>
@@ -585,7 +585,7 @@ export default function Home() {
             "rounded-full shadow-lg p-4 h-16 w-16"
           )}
         >
-          <a href="tel:+525525989751">
+          <a href="tel:+524422517169">
             <Phone className="h-7 w-7" />
             <span className="sr-only">Llamar ahora</span>
           </a>
@@ -594,3 +594,5 @@ export default function Home() {
     </div>
   );
 }
+
+    

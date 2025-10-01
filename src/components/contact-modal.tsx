@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -17,9 +18,9 @@ interface ContactModalProps {
 }
 
 const phoneNumbers = [
-  { display: "(55) 2598-9751", tel: "+525525989751" },
-  { display: "(55) 4167-3745", tel: "+525541673745" },
-  { display: "(55) 5571-5084", tel: "+525555715084" },
+  { display: "(442) 251-7169", tel: "+524422517169" },
+  { display: "(442) 251-7168", tel: "+524422517168" },
+  { display: "(442) 155-0415", tel: "+524421550415" },
 ];
 
 export function ContactModal({ isOpen, onOpenChange }: ContactModalProps) {
@@ -27,7 +28,7 @@ export function ContactModal({ isOpen, onOpenChange }: ContactModalProps) {
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle className="text-2xl text-primary">Contacta con un Asesor</DialogTitle>
+          <DialogTitle className="text-2xl text-primary">Contacta con un Asesor en Querétaro</DialogTitle>
           <DialogDescription>
             Elige tu método de contacto preferido. Nuestro equipo está listo para ayudarte.
           </DialogDescription>
@@ -45,7 +46,7 @@ export function ContactModal({ isOpen, onOpenChange }: ContactModalProps) {
           
            <h3 className="text-sm font-medium text-muted-foreground text-center pt-3">Enviar mensaje</h3>
           <Button asChild variant="secondary" size="lg" className="w-full">
-            <a href="https://wa.me/5215549414017?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización%20para%20puntales." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+            <a href="https://wa.me/5214422517169?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización%20para%20puntales." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
               <MessageSquare className="h-5 w-5" />
               Enviar WhatsApp
             </a>
@@ -55,3 +56,5 @@ export function ContactModal({ isOpen, onOpenChange }: ContactModalProps) {
     </Dialog>
   );
 }
+
+    

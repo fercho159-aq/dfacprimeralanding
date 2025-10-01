@@ -30,15 +30,15 @@ export function UrgentMaterialModal({ isOpen, onOpenChange }: UrgentMaterialModa
             Nuestro equipo está listo para atender tu pedido de inmediato. ¡Contáctanos ahora!
           </p>
           <Button asChild size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
-            <a href="https://wa.me/5215549414017?text=Hola,%20necesito%20material%20urgente." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+            <a href="https://wa.me/5214422517169?text=Hola,%20necesito%20material%20urgente." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
               <MessageSquare className="h-5 w-5" />
               Contactar por WhatsApp
             </a>
           </Button>
           <Button asChild size="lg" className="w-full">
-            <a href="tel:+525525989751" className="flex items-center justify-center gap-3">
+            <a href="tel:+524422517169" className="flex items-center justify-center gap-3">
               <Phone className="h-5 w-5" />
-              Llamar Ahora: (55) 2598-9751
+              Llamar Ahora: (442) 251-7169
             </a>
           </Button>
         </div>
@@ -46,3 +46,5 @@ export function UrgentMaterialModal({ isOpen, onOpenChange }: UrgentMaterialModa
     </Dialog>
   );
 }
+
+    
