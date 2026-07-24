@@ -2,6 +2,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { puntalesData, type Puntal } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Slider } from '@/components/ui/slider';
@@ -157,7 +158,15 @@ export default function PuntalSelector({ onCtaClick }: PuntalSelectorProps) {
            <div className="bg-secondary/40 p-2 text-center font-bold text-primary">
               Modelo: {currentModel.model}
           </div>
-          <PuntalAnimation model={currentModel} height={currentHeight} />
+          <div className="relative w-full h-[400px] bg-white">
+            <Image
+              src={currentModel.image}
+              alt={currentModel.model}
+              fill
+              className="object-contain p-6"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
         </Card>
          <Card className="shadow-lg">
           <CardHeader>
