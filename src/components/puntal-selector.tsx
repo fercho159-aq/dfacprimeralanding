@@ -31,8 +31,8 @@ import {
   Ruler,
   ChevronRight,
   MoveVertical,
-  MessageSquare,
 } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 
@@ -278,7 +278,7 @@ export default function PuntalSelector({ onCtaClick }: PuntalSelectorProps) {
           </CardHeader>
           <CardContent>
             <Button size="lg" onClick={onCtaClick} className="w-full">
-              <MessageSquare className="mr-2 h-5 w-5" />
+              <WhatsAppIcon className="mr-2 h-5 w-5" />
               Contactar a un Asesor
             </Button>
           </CardContent>

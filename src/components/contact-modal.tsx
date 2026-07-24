@@ -9,7 +9,8 @@ import {
   DialogDescription,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { Phone, MessageSquare } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import type { Dispatch, SetStateAction } from 'react';
 
 interface ContactModalProps {
@@ -47,7 +48,7 @@ export function ContactModal({ isOpen, onOpenChange }: ContactModalProps) {
            <h3 className="text-sm font-medium text-muted-foreground text-center pt-3">Enviar mensaje</h3>
           <Button asChild variant="secondary" size="lg" className="w-full">
             <a href="https://wa.me/5214421550415?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización%20para%20puntales." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
-              <MessageSquare className="h-5 w-5" />
+              <WhatsAppIcon className="h-5 w-5" />
               Enviar WhatsApp
             </a>
           </Button>

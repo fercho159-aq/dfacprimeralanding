@@ -4,7 +4,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import PuntalSelector from '@/components/puntal-selector';
-import { Phone, MessageSquare, Menu, X, CheckCircle, Shield, Users, Truck, Clock, PackageCheck, Quote, Wrench, Layers, Anchor, Waves, Building2 } from 'lucide-react';
+import { Phone, Menu, X, CheckCircle, Shield, Users, Truck, Clock, PackageCheck, Quote, Wrench, Layers, Anchor, Waves, Building2 } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { Button } from '@/components/ui/button';
 import { ContactModal } from '@/components/contact-modal';
 import { UrgentMaterialModal } from '@/components/urgent-material-modal';
@@ -272,7 +273,7 @@ export default function Home() {
                       </p>
                       <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
                           <Button size="lg" onClick={() => setIsModalOpen(true)}>
-                              <MessageSquare className="mr-2 h-5 w-5"/> Cotizar Ahora
+                              <WhatsAppIcon className="mr-2 h-5 w-5"/> Cotizar Ahora
                           </Button>
                           <Button size="lg" variant="outline" className="bg-transparent text-white border-white/80 hover:bg-white hover:text-primary">
                                Ver Catálogo
@@ -499,7 +500,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6">
               <Button size="lg" variant="secondary" onClick={() => setIsModalOpen(true)}>
-                <MessageSquare className="mr-2 h-5 w-5"/> Solicitar Cotización
+                <WhatsAppIcon className="mr-2 h-5 w-5"/> Solicitar Cotización
               </Button>
               <a href="tel:+524422517169" className="flex items-center gap-2 hover:underline text-lg">
                 <Phone className="w-5 h-5" />
@@ -575,7 +576,7 @@ export default function Home() {
           )}
         >
           <a href="https://wa.me/5214421550415?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización." target="_blank" rel="noopener noreferrer">
-            <MessageSquare className="h-7 w-7 text-white" />
+            <WhatsAppIcon className="h-7 w-7 text-white" />
             <span className="sr-only">Contactar por WhatsApp</span>
           </a>
         </Button>
