@@ -321,15 +321,17 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {featuredProducts.map((product, index) => (
                         <Card key={index} className="overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                            <CardHeader className="p-0">
-                                <Image 
-                                    src={product.image}
-                                    alt={product.name}
-                                    width={600}
-                                    height={400}
-                                    className="object-cover aspect-[3/2] w-full"
-                                    data-ai-hint={product.hint}
-                                />
+                            <CardHeader className="p-0 bg-white">
+                                <div className="relative w-full aspect-[3/2]">
+                                    <Image
+                                        src={product.image}
+                                        alt={product.name}
+                                        fill
+                                        className="object-contain p-6"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                        data-ai-hint={product.hint}
+                                    />
+                                </div>
                             </CardHeader>
                             <CardContent className="p-6 flex flex-col flex-grow">
                                 <div className="flex items-center gap-3 mb-2">
