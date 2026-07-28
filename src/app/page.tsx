@@ -224,12 +224,12 @@ const testimonials = [
 ];
 
 const galleryImages = [
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.08 PM.jpeg', alt: 'Puntales en obra de gran altura', hint: 'construction site', className: 'md:col-span-2 md:row-span-2' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.07 PM.jpeg', alt: 'Almacén de puntales metálicos', hint: 'construction equipment' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.03 PM.jpeg', alt: 'Puntales listos para entrega', hint: 'building materials' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.04 PM.jpeg', alt: 'Vista panorámica de cimbra con puntales', hint: 'formwork structure', className: 'md:col-span-2' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.05 PM.jpeg', alt: 'Trabajadores ajustando puntales', hint: 'construction workers' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.06 PM.jpeg', alt: 'Detalle de puntal de acero reforzado', hint: 'steel props' },
+    { src: '/images/Galeria/puntales-almacen-1.jpeg', alt: 'Puntales en obra de gran altura', hint: 'construction site', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
+    { src: '/images/Galeria/puntales-almacen-2.jpeg', alt: 'Almacén de puntales metálicos', hint: 'construction equipment', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.06 PM.jpeg', alt: 'Detalle de puntal de acero reforzado', hint: 'steel props', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.05 PM.jpeg', alt: 'Trabajadores ajustando puntales', hint: 'construction workers', className: 'col-span-12 sm:col-span-6 h-80' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.04 PM.jpeg', alt: 'Vista panorámica de cimbra con puntales', hint: 'formwork structure', className: 'col-span-12 sm:col-span-6 h-80' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.03 PM.jpeg', alt: 'Puntales listos para entrega', hint: 'building materials', className: 'col-span-12 h-[26rem]' },
 ];
 
 export default function Home() {
@@ -534,19 +534,19 @@ export default function Home() {
                 Vea la calidad y versatilidad de nuestros puntales en proyectos de construcción reales.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[250px] gap-4">
+            <div className="grid grid-cols-12 gap-4">
               {galleryImages.map((image, index) => (
-                <div key={index} className={cn("group relative overflow-hidden rounded-lg shadow-lg", image.className)}>
+                <div key={index} className={cn("overflow-hidden rounded-lg group relative", image.className)}>
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
+                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                     data-ai-hint={image.hint}
                   />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-                  <div className="absolute inset-0 flex items-end p-4">
-                    <p className="text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">{image.alt}</p>
+                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors"></div>
+                  <div className="absolute bottom-4 left-4 text-white p-2 bg-black/20 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="font-bold text-sm">{image.alt}</p>
                   </div>
                 </div>
               ))}
