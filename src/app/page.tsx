@@ -19,7 +19,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import Autoplay from "embla-carousel-autoplay";
-import { FacebookIcon } from '@/components/icons';
+import { FacebookIcon, TikTokIcon } from '@/components/icons';
 import { Instagram } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Flipbook } from '@/components/flipbook';
@@ -256,7 +256,7 @@ export default function Home() {
       <header className="py-4 px-4 md:px-8 border-b border-border/40 bg-background/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <a href="#inicio" onClick={(e) => handleNavLinkClick(e, '#inicio')} className="flex items-center gap-3">
-            <Image src="/images/dfac-logo.webp" alt="DFAC Accesorios para Cimbras Logo" width={393} height={134} className="h-10 w-auto" />
+            <Image src="/images/dfac-logo-queretaro.png" alt="DFAC Accesorios para Cimbras Logo" width={256} height={112} className="h-10 w-auto" />
             <span className="sr-only">DFAC Accesorios para Cimbras</span>
           </a>
           <nav className="hidden xl:flex items-center gap-4">
@@ -278,6 +278,10 @@ export default function Home() {
               <a href="https://www.instagram.com/dfac_cimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
+              </a>
+              <a href="https://www.tiktok.com/@accesorios.dfac" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <TikTokIcon className="h-5 w-5" />
+                <span className="sr-only">TikTok</span>
               </a>
             </div>
             <Button onClick={() => setIsMenuOpen(!isMenuOpen)} variant="ghost" size="icon" className="xl:hidden">
@@ -304,6 +308,10 @@ export default function Home() {
                 <a href="https://www.instagram.com/dfac_cimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Instagram className="h-6 w-6" />
                   <span className="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@accesorios.dfac" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <TikTokIcon className="h-6 w-6" />
+                  <span className="sr-only">TikTok</span>
                 </a>
               </div>
             </nav>
@@ -650,7 +658,7 @@ export default function Home() {
         <div className="container mx-auto py-8 px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left items-start">
             <div className="md:col-span-1">
-               <Image src="/images/dfac-logo.webp" alt="DFAC Accesorios para Cimbras Logo" width={393} height={134} className="h-10 w-auto mx-auto md:mx-0" />
+               <Image src="/images/dfac-logo-queretaro.png" alt="DFAC Accesorios para Cimbras Logo" width={256} height={112} className="h-10 w-auto mx-auto md:mx-0" />
               <p className="text-sm mt-4">Querétaro, Qro., México</p>
               <p className="text-sm">ventas@cimbrayaccesorios.com.mx</p>
               <div className="mt-4 rounded-lg overflow-hidden border border-border/50 h-[180px]">
@@ -702,6 +710,10 @@ export default function Home() {
                 <a href="https://www.instagram.com/dfac_cimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Instagram className="h-6 w-6" />
                   <span className="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@accesorios.dfac" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <TikTokIcon className="h-6 w-6" />
+                  <span className="sr-only">TikTok</span>
                 </a>
               </div>
             </div>
