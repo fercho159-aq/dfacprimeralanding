@@ -256,7 +256,7 @@ export default function Home() {
       <header className="py-4 px-4 md:px-8 border-b border-border/40 bg-background/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <a href="#inicio" onClick={(e) => handleNavLinkClick(e, '#inicio')} className="flex items-center gap-3">
-            <Image src="/images/Recurso-2.png.webp" alt="DFAC Accesorios para Cimbras Logo" width={180} height={40} className="h-10 w-auto" />
+            <Image src="/images/dfac-logo.webp" alt="DFAC Accesorios para Cimbras Logo" width={393} height={134} className="h-10 w-auto" />
             <span className="sr-only">DFAC Accesorios para Cimbras</span>
           </a>
           <nav className="hidden xl:flex items-center gap-4">
@@ -650,7 +650,7 @@ export default function Home() {
         <div className="container mx-auto py-8 px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left items-start">
             <div className="md:col-span-1">
-               <Image src="https://cimbrayaccesorios.com.mx/wp-content/uploads/2020/09/Recurso-2.png.webp" alt="DFAC Accesorios para Cimbras Logo" width={180} height={40} className="h-10 w-auto mx-auto md:mx-0" />
+               <Image src="/images/dfac-logo.webp" alt="DFAC Accesorios para Cimbras Logo" width={393} height={134} className="h-10 w-auto mx-auto md:mx-0" />
               <p className="text-sm mt-4">Querétaro, Qro., México</p>
               <p className="text-sm">ventas@cimbrayaccesorios.com.mx</p>
               <div className="mt-4 rounded-lg overflow-hidden border border-border/50 h-[180px]">
