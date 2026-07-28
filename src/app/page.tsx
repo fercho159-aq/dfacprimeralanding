@@ -520,6 +520,17 @@ export default function Home() {
                <Image src="https://cimbrayaccesorios.com.mx/wp-content/uploads/2020/09/Recurso-2.png.webp" alt="DFAC Accesorios para Cimbras Logo" width={180} height={40} className="h-10 w-auto mx-auto md:mx-0" />
               <p className="text-sm mt-4">Querétaro, Qro., México</p>
               <p className="text-sm">ventas@cimbrayaccesorios.com.mx</p>
+              <div className="mt-4 rounded-lg overflow-hidden border border-border/50 h-[180px]">
+                <iframe
+                  title="Ubicación de DFAC Querétaro en Google Maps"
+                  src="https://maps.google.com/maps?q=Prol.%20Bernardo%20Quintana%202481%2C%20Felipe%20Carrillo%20Puerto%2C%2076113%20Santiago%20de%20Quer%C3%A9taro%2C%20Qro&z=15&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
             <div>
                <h3 className="font-bold text-lg mb-2">Enlaces Rápidos</h3>
