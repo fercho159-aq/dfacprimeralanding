@@ -70,14 +70,14 @@ const featuredProducts = [
     {
         name: 'Junta Ortogonal 4 Tornillos en Chapa Prensada',
         description: 'Asegura uniones firmes y estables a 90 grados en andamios. Esencial para la seguridad estructural.',
-        image: 'https://www.gbmitaly.com/resources/images/giunti/GO04.jpg',
+        image: '/images/Productos/junta-ortogonal-4-tornillos.png',
         hint: 'scaffolding clamp',
         icon: Wrench
     },
     {
         name: 'Junta Giratoria 2 Tornillos',
         description: 'Permite uniones en ángulos variables con total seguridad. Perfecta para estructuras complejas y versátiles.',
-        image: 'https://m.media-amazon.com/images/I/511uP1r-GrL._UF894,1000_QL80_.jpg',
+        image: '/images/Productos/junta-giratoria-2-tornillos.png',
         hint: 'swivel coupler',
         icon: Layers
     },
