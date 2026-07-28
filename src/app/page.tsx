@@ -31,6 +31,7 @@ const navLinks = [
   { href: '#accesorios', label: 'Accesorios' },
   { href: '#catalogo', label: 'Catálogo' },
   { href: '#beneficios', label: 'Beneficios' },
+  { href: '#especificaciones', label: 'Ficha Técnica' },
   { href: '#galeria', label: 'Galería' },
   { href: '#testimonios', label: 'Testimonios' },
   { href: '#nosotros', label: 'Nosotros' },
@@ -53,19 +54,78 @@ const beneficios = [
   },
   {
     icon: Shield,
-    title: 'Seguridad en Obra',
-    description: 'Nuestros puntales cumplen con las más altas normas de seguridad para garantizar la protección en tu proyecto.'
+    title: 'Seguridad Certificada',
+    description: 'Fabricados en acero S235JR bajo norma europea UNE-EN 1065, con tablas de carga verificadas y un factor de seguridad de 1.7 respecto al valor de ruptura, según el documento de certificación de fábrica.'
   },
   {
     icon: CheckCircle,
-    title: 'Montaje Rápido',
-    description: 'Diseñados para un ensamblaje y desmontaje eficiente, optimizando los tiempos de trabajo.'
+    title: 'Ajuste Preciso cada 10 cm',
+    description: 'Regulación de altura mediante pin de acero reforzado de 14 mm de diámetro, para agilizar el proceso de fundición de losa y optimizar los tiempos de montaje.'
   },
   {
     icon: Users,
-    title: 'Durabilidad Comprobada',
-    description: 'Fabricados con acero de alta calidad que asegura una larga vida útil y resistencia a la corrosión.'
+    title: 'Durabilidad Certificada',
+    description: 'Pintura electrostática probada en cámara de humedad bajo norma ASTM D2247-87, y soldadura con registro de cualificación ISO 15613:2005 (certificado No. P16W.0122), bajo regulación de fabricación UNI EN 729-2:1996.'
   }
+];
+
+const especificacionesTecnicas = [
+  {
+    nombre: 'Puntal Telescópico 2.00 – 3.60 m',
+    fabricacion: 'Fabricado bajo norma europea en Italia',
+    altura: '2.00 a 3.60 m',
+    resistenciaMin: { altura: '2.00 m', carga: '1,800 kg' },
+    resistenciaMax: { altura: '3.60 m', carga: '801 kg' },
+    tuboInterior: 'Ø 48.30 mm · espesor 1.8/2.0 mm',
+    tuboExterior: 'Ø 56.00 mm · espesor 1.8 mm',
+    base: '120 × 120 × 4.5 mm',
+    peso: '10.06 kg (22.13 lb)',
+  },
+  {
+    nombre: 'Puntal Telescópico 2.20 – 4.00 m',
+    fabricacion: 'Fabricado bajo norma europea en Italia',
+    altura: '2.20 a 4.00 m',
+    resistenciaMin: { altura: '2.20 m', carga: '1,800 kg' },
+    resistenciaMax: { altura: '4.00 m', carga: '758 kg' },
+    tuboInterior: 'Ø 48.30 mm · espesor 1.8/2.0 mm',
+    tuboExterior: 'Ø 56.00 mm · espesor 1.8 mm',
+    base: '120 × 120 × 4.5 mm',
+    peso: '11.00 kg (24.25 lb)',
+  },
+  {
+    nombre: 'Puntal Telescópico 3.20 – 5.00 m',
+    fabricacion: 'Fabricado bajo norma europea en Italia',
+    altura: '3.20 a 5.00 m',
+    resistenciaMin: { altura: '3.20 m', carga: '1,800 kg' },
+    resistenciaMax: { altura: '5.00 m', carga: '300 kg' },
+    tuboInterior: 'Ø 48.30 mm · espesor 1.8/2.0 mm',
+    tuboExterior: 'Ø 56.00 mm · espesor 1.8 mm',
+    base: '120 × 120 × 4.5 mm',
+    peso: '14.00 kg (30.86 lb)',
+  },
+];
+
+const certificaciones = [
+  {
+    icon: PackageCheck,
+    title: 'Ajuste cada 10 cm',
+    description: 'Regulación de altura mediante pin de acero reforzado de 14 mm de diámetro, para agilizar el proceso de fundición de losa.',
+  },
+  {
+    icon: Shield,
+    title: 'Factor de seguridad 1.7',
+    description: 'La tabla de capacidades de resistencia por altura se basa en el documento de certificación de fábrica, con un factor de seguridad de 1.7 respecto al valor de ruptura.',
+  },
+  {
+    icon: CheckCircle,
+    title: 'Prueba de humedad ASTM D2247-87',
+    description: 'El puntal pasa por una prueba de humedad en cámara con pintura electrostática, bajo la norma ASTM D2247-87.',
+  },
+  {
+    icon: Wrench,
+    title: 'Soldadura certificada ISO 15613:2005',
+    description: 'Registro de cualificación del proceso de soldadura según ISO 15613:2005, certificado No. P16W.0122.',
+  },
 ];
 
 const featuredProducts = [
@@ -199,9 +259,9 @@ export default function Home() {
             <Image src="/images/Recurso-2.png.webp" alt="DFAC Accesorios para Cimbras Logo" width={180} height={40} className="h-10 w-auto" />
             <span className="sr-only">DFAC Accesorios para Cimbras</span>
           </a>
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden xl:flex items-center gap-4">
             {navLinks.map(link => (
-              <a key={link.href} href={link.href} onClick={(e) => handleNavLinkClick(e, link.href)} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              <a key={link.href} href={link.href} onClick={(e) => handleNavLinkClick(e, link.href)} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">
                 {link.label}
               </a>
             ))}
@@ -220,13 +280,13 @@ export default function Home() {
                 <span className="sr-only">Instagram</span>
               </a>
             </div>
-            <Button onClick={() => setIsMenuOpen(!isMenuOpen)} variant="ghost" size="icon" className="lg:hidden">
+            <Button onClick={() => setIsMenuOpen(!isMenuOpen)} variant="ghost" size="icon" className="xl:hidden">
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
         {isMenuOpen && (
-          <div className="lg:hidden mt-4">
+          <div className="xl:hidden mt-4">
             <nav className="flex flex-col gap-4">
               {navLinks.map(link => (
                 <a key={link.href} href={link.href} onClick={(e) => handleNavLinkClick(e, link.href)} className="text-base font-medium text-foreground hover:text-primary transition-colors py-2">
@@ -384,6 +444,66 @@ export default function Home() {
             </div>
         </section>
         
+        <section id="especificaciones" className="py-16 md:py-24 px-4 bg-muted/40">
+          <div className="container mx-auto">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-3xl font-bold text-primary">Ficha Técnica: Puntal Telescópico</h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Tabla de resistencias por altura con base en el documento de certificación enviado por
+                fábrica, para que conozcas exactamente la capacidad de carga de cada modelo DFAC.
+              </p>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[720px] border-collapse text-sm">
+                <thead>
+                  <tr className="border-b-2 border-primary/20">
+                    <th className="text-left py-3 pr-4 font-bold">Modelo</th>
+                    <th className="text-left py-3 px-4 font-bold">Resistencia altura mínima</th>
+                    <th className="text-left py-3 px-4 font-bold">Resistencia altura máxima</th>
+                    <th className="text-left py-3 px-4 font-bold">Tubo interior</th>
+                    <th className="text-left py-3 px-4 font-bold">Tubo exterior</th>
+                    <th className="text-left py-3 px-4 font-bold">Base</th>
+                    <th className="text-left py-3 pl-4 font-bold">Peso</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {especificacionesTecnicas.map((e) => (
+                    <tr key={e.nombre} className="border-b border-border/50">
+                      <td className="py-4 pr-4 font-semibold">{e.nombre}<br /><span className="font-normal text-xs text-muted-foreground">{e.fabricacion}</span></td>
+                      <td className="py-4 px-4 text-muted-foreground">{e.resistenciaMin.altura} = {e.resistenciaMin.carga}</td>
+                      <td className="py-4 px-4 text-muted-foreground">{e.resistenciaMax.altura} = {e.resistenciaMax.carga}</td>
+                      <td className="py-4 px-4 text-muted-foreground">{e.tuboInterior}</td>
+                      <td className="py-4 px-4 text-muted-foreground">{e.tuboExterior}</td>
+                      <td className="py-4 px-4 text-muted-foreground">{e.base}</td>
+                      <td className="py-4 pl-4 text-muted-foreground">{e.peso}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+              {certificaciones.map((c) => (
+                <Card key={c.title} className="shadow-md">
+                  <CardHeader>
+                    <c.icon className="w-9 h-9 text-primary" />
+                    <CardTitle className="text-base mt-2">{c.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">{c.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <p className="mt-8 text-center text-sm text-muted-foreground max-w-3xl mx-auto">
+              Fácil instalación, poco mantenimiento, durabilidad y resistencia. Tipo de acero S235JR, bajo
+              regulación de fabricación UNI EN 729-2:1996.
+            </p>
+          </div>
+        </section>
+
         <section id="galeria" className="py-12 md:py-16 px-4 bg-secondary/30">
           <div className="container mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-12">
