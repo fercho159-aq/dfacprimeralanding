@@ -105,7 +105,7 @@ const featuredProducts = [
     {
         name: 'Viga H-20 para Cimbra',
         description: 'Fabricada con madera de alta calidad y un diseño robusto, nuestra viga H-20 garantiza la máxima eficiencia y seguridad en sus proyectos de construcción. El tapón protector integrado aumenta su durabilidad.',
-        image: 'https://www.mediafacile.net/edifacilecom/0/0/4/4042-1-101987-20230926085429-b.jpg',
+        image: '/images/Productos/viga-h20.jpeg',
         hint: 'h20 beam',
         icon: Building2
     }
