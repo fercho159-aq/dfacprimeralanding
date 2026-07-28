@@ -22,12 +22,14 @@ import Autoplay from "embla-carousel-autoplay";
 import { FacebookIcon } from '@/components/icons';
 import { Instagram } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Flipbook } from '@/components/flipbook';
 
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
   { href: '#modelos', label: 'Cotizador' },
   { href: '#accesorios', label: 'Accesorios' },
+  { href: '#catalogo', label: 'Catálogo' },
   { href: '#beneficios', label: 'Beneficios' },
   { href: '#galeria', label: 'Galería' },
   { href: '#testimonios', label: 'Testimonios' },
@@ -161,6 +163,7 @@ const galleryImages = [
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const catalogPdfUrl = "/archivos/CATALOGO-2026.pdf";
   const [isUrgentModalOpen, setIsUrgentModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentYear, setCurrentYear] = useState<number | null>(null);
@@ -346,6 +349,16 @@ export default function Home() {
                         </Card>
                     ))}
                 </div>
+            </div>
+        </section>
+
+        <section id="catalogo" className="py-16 md:py-24 px-4 bg-secondary/30">
+            <div className="container mx-auto">
+                <div className="text-center max-w-2xl mx-auto mb-12">
+                    <h2 className="text-3xl font-bold text-primary">Nuestro Catálogo 2026</h2>
+                    <p className="text-muted-foreground mt-4">Hojéalo como un libro o descárgalo en PDF.</p>
+                </div>
+                <Flipbook pdfUrl={catalogPdfUrl} />
             </div>
         </section>
 
