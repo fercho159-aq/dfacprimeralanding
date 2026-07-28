@@ -673,7 +673,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left items-start">
             <div className="md:col-span-1">
                <Image src="/images/dfac-logo-queretaro.png" alt="DFAC Accesorios para Cimbras Logo" width={256} height={112} className="h-10 w-auto mx-auto md:mx-0" />
-              <p className="text-sm mt-4">Querétaro, Qro., México</p>
+              <p className="text-sm mt-4">Prol. Bernardo Quintana 2481, Felipe Carrillo Puerto, 76113 Santiago de Querétaro, Qro.</p>
               <p className="text-sm">ventas@cimbrayaccesorios.com.mx</p>
               <div className="mt-4 rounded-lg overflow-hidden border border-border/50 h-[180px]">
                 <iframe
