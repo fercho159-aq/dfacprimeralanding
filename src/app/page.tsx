@@ -49,22 +49,22 @@ const clientes = [
 const beneficios = [
   {
     icon: Truck,
-    title: 'Entrega en Menos de 24h',
+    title: 'Entrega en menos de 24 h',
     description: 'Recibe tu material en obra con nuestra garantía de entrega express para no detener tu proyecto.'
   },
   {
     icon: Shield,
-    title: 'Seguridad Certificada',
+    title: 'Seguridad certificada',
     description: 'Fabricados en acero S235JR bajo norma europea UNE-EN 1065, con tablas de carga verificadas y un factor de seguridad de 1.7 respecto al valor de ruptura, según el documento de certificación de fábrica.'
   },
   {
     icon: CheckCircle,
-    title: 'Ajuste Preciso cada 10 cm',
+    title: 'Ajuste preciso cada 10 cm',
     description: 'Regulación de altura mediante pin de acero reforzado de 14 mm de diámetro, para agilizar el proceso de fundición de losa y optimizar los tiempos de montaje.'
   },
   {
     icon: Users,
-    title: 'Durabilidad Certificada',
+    title: 'Durabilidad certificada',
     description: 'Pintura electrostática probada en cámara de humedad bajo norma ASTM D2247-87, y soldadura con registro de cualificación ISO 15613:2005 (certificado No. P16W.0122), bajo regulación de fabricación UNI EN 729-2:1996.'
   }
 ];
@@ -187,17 +187,17 @@ const featuredProducts = [
 const heroFeatures = [
     {
         icon: Clock,
-        title: "Entrega 24h",
+        title: "Entrega en menos de 24 h",
         description: "En Querétaro y área metropolitana"
     },
     {
         icon: PackageCheck,
-        title: "Calidad Garantizada",
+        title: "Calidad garantizada",
         description: "Productos certificados"
     },
     {
         icon: Truck,
-        title: "Flete Gratis",
+        title: "Flete gratis",
         description: "En Querétaro y Zona Metropolitana"
     }
 ];
@@ -279,20 +279,16 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <Button onClick={() => setIsModalOpen(true)} className="hidden sm:inline-flex">
-              Solicitar Cotización
+              Solicitar cotización
             </Button>
             <div className="flex gap-4 items-center">
-              <a href="https://www.facebook.com/bandasdepvcymonosparacimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100083655136054" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <FacebookIcon className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="https://www.instagram.com/dfac_cimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/queretarodfac?igsh=dThoZGV1YzE4ZnV6" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </a>
-              <a href="https://www.tiktok.com/@accesorios.dfac" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                <TikTokIcon className="h-5 w-5" />
-                <span className="sr-only">TikTok</span>
               </a>
             </div>
             <Button onClick={() => setIsMenuOpen(!isMenuOpen)} variant="ghost" size="icon" className="xl:hidden">
@@ -309,20 +305,16 @@ export default function Home() {
                 </a>
               ))}
               <Button onClick={() => setIsModalOpen(true)} className="w-full mt-4">
-                Solicitar Cotización
+                Solicitar cotización
               </Button>
                <div className="flex gap-4 items-center justify-center mt-4">
-                <a href="https://www.facebook.com/bandasdepvcymonosparacimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=100083655136054" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <FacebookIcon className="h-6 w-6" />
                   <span className="sr-only">Facebook</span>
                 </a>
-                <a href="https://www.instagram.com/dfac_cimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://www.instagram.com/queretarodfac?igsh=dThoZGV1YzE4ZnV6" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Instagram className="h-6 w-6" />
                   <span className="sr-only">Instagram</span>
-                </a>
-                <a href="https://www.tiktok.com/@accesorios.dfac" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                  <TikTokIcon className="h-6 w-6" />
-                  <span className="sr-only">TikTok</span>
                 </a>
               </div>
             </nav>
@@ -386,9 +378,9 @@ export default function Home() {
         <section id="modelos" className="py-16 md:py-24 px-4 bg-secondary/30">
           <div className="container mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl font-bold text-primary">Encuentra tu Puntal y Cotiza</h2>
+              <h2 className="text-3xl font-bold text-primary">Encuentra tu puntal y cotiza</h2>
               <p className="text-muted-foreground mt-2">
-                Selecciona el modelo que necesitas y ajusta la altura para ver la capacidad de carga. ¡Obtén una cotización al instante!
+                Calcula la capacidad de carga de tu puntal y solicita una cotización.
               </p>
             </div>
             <PuntalSelector onCtaClick={() => setIsModalOpen(true)} />
@@ -398,7 +390,7 @@ export default function Home() {
         <section id="accesorios" className="py-16 md:py-24 px-4">
             <div className="container mx-auto">
                 <div className="text-center max-w-2xl mx-auto mb-12">
-                    <h2 className="text-3xl font-bold text-primary">Completa tu Equipo con Nuestros Accesorios</h2>
+                    <h2 className="text-3xl font-bold text-primary">Completa tu equipo con nuestros accesorios</h2>
                     <p className="text-muted-foreground mt-2">
                         Asegura la máxima versatilidad y seguridad en tu obra con nuestras juntas de alta resistencia.
                     </p>
@@ -425,7 +417,7 @@ export default function Home() {
                                 </div>
                                 <CardDescription className="mb-4 flex-grow">{product.description}</CardDescription>
                                 <Button onClick={() => setIsModalOpen(true)} className="w-full mt-auto">
-                                    Solicitar Cotización
+                                    Solicitar cotización
                                 </Button>
                             </CardContent>
                         </Card>
@@ -657,7 +649,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6">
               <Button size="lg" variant="secondary" onClick={() => setIsModalOpen(true)}>
-                <WhatsAppIcon className="mr-2 h-5 w-5"/> Solicitar Cotización
+                <WhatsAppIcon className="mr-2 h-5 w-5"/> Solicitar cotización
               </Button>
               <a href="tel:+524422517169" className="flex items-center gap-2 hover:underline text-lg">
                 <Phone className="w-5 h-5" />
@@ -673,12 +665,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left items-start">
             <div className="md:col-span-1">
                <Image src="/images/dfac-logo-queretaro.png" alt="DFAC Accesorios para Cimbras Logo" width={256} height={112} className="h-10 w-auto mx-auto md:mx-0" />
-              <p className="text-sm mt-4">Prol. Bernardo Quintana 2481, Felipe Carrillo Puerto, 76113 Santiago de Querétaro, Qro.</p>
+              <p className="text-sm mt-4">Prol. Bernardo Quintana 2481, Bodega 15, Felipe Carrillo Puerto, 76113 Santiago de Querétaro, Qro.</p>
               <p className="text-sm">ventas@cimbrayaccesorios.com.mx</p>
               <div className="mt-4 rounded-lg overflow-hidden border border-border/50 h-[180px]">
                 <iframe
                   title="Ubicación de DFAC Querétaro en Google Maps"
-                  src="https://maps.google.com/maps?q=Prol.%20Bernardo%20Quintana%202481%2C%20Felipe%20Carrillo%20Puerto%2C%2076113%20Santiago%20de%20Quer%C3%A9taro%2C%20Qro&z=15&output=embed"
+                  src="https://maps.google.com/maps?q=DFAC%20QUERETARO&z=15&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -717,17 +709,13 @@ export default function Home() {
              <div>
               <h3 className="font-bold text-lg mb-2">Síguenos</h3>
               <div className="flex justify-center md:justify-start gap-4">
-                <a href="https://www.facebook.com/bandasdepvcymonosparacimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=100083655136054" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <FacebookIcon className="h-6 w-6" />
                   <span className="sr-only">Facebook</span>
                 </a>
-                <a href="https://www.instagram.com/dfac_cimbra/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://www.instagram.com/queretarodfac?igsh=dThoZGV1YzE4ZnV6" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Instagram className="h-6 w-6" />
                   <span className="sr-only">Instagram</span>
-                </a>
-                <a href="https://www.tiktok.com/@accesorios.dfac" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                  <TikTokIcon className="h-6 w-6" />
-                  <span className="sr-only">TikTok</span>
                 </a>
               </div>
             </div>
@@ -747,7 +735,7 @@ export default function Home() {
             "rounded-full shadow-lg p-4 h-16 w-16 bg-green-500 hover:bg-green-600"
           )}
         >
-          <a href="https://wa.me/5214421550415?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización." target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/524421550415?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización." target="_blank" rel="noopener noreferrer">
             <WhatsAppIcon className="h-7 w-7 text-white" />
             <span className="sr-only">Contactar por WhatsApp</span>
           </a>
@@ -758,7 +746,7 @@ export default function Home() {
             "rounded-full shadow-lg p-4 h-16 w-16"
           )}
         >
-          <a href="tel:+524422517169">
+          <a href="tel:+524421550415">
             <Phone className="h-7 w-7" />
             <span className="sr-only">Llamar ahora</span>
           </a>

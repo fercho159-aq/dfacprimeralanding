@@ -31,7 +31,7 @@ export function UrgentMaterialModal({ isOpen, onOpenChange }: UrgentMaterialModa
             Nuestro equipo está listo para atender tu pedido de inmediato. ¡Contáctanos ahora!
           </p>
           <Button asChild size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
-            <a href="https://wa.me/5214421550415?text=Hola,%20necesito%20material%20urgente." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+            <a href="https://wa.me/524421550415?text=Hola,%20necesito%20material%20urgente." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
               <WhatsAppIcon className="h-5 w-5" />
               Contactar por WhatsApp
             </a>
@@ -39,7 +39,7 @@ export function UrgentMaterialModal({ isOpen, onOpenChange }: UrgentMaterialModa
           <Button asChild size="lg" className="w-full">
             <a href="tel:+524422517169" className="flex items-center justify-center gap-3">
               <Phone className="h-5 w-5" />
-              Llamar Ahora: (442) 251-7169
+              Llamar ahora: (442) 251-7169
             </a>
           </Button>
         </div>

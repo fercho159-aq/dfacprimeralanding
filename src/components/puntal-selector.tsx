@@ -250,7 +250,7 @@ export default function PuntalSelector({ onCtaClick }: PuntalSelectorProps) {
           </CardHeader>
           <CardContent className="text-center">
             <p className="text-6xl md:text-7xl font-bold text-primary tabular-nums" key={highlightKey}>
-              <span className="animate-highlight inline-block">{maxLoad.toLocaleString('es-ES')}</span>
+              <span className="animate-highlight inline-block">{maxLoad.toLocaleString('es-MX')}</span>
             </p>
             <p className="text-muted-foreground mt-1">kg a {currentHeight.toFixed(0)} cm de altura</p>
           </CardContent>
@@ -272,7 +272,7 @@ export default function PuntalSelector({ onCtaClick }: PuntalSelectorProps) {
                 {currentModel.loadTable.map((entry) => (
                   <TableRow key={entry.height} className={cn(currentHeight >= entry.height && maxLoad === entry.load ? "bg-primary/10 font-bold" : "")}>
                     <TableCell>{entry.height}</TableCell>
-                    <TableCell className="text-right">{entry.load.toLocaleString('es-ES')}</TableCell>
+                    <TableCell className="text-right">{entry.load.toLocaleString('es-MX')}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -282,7 +282,7 @@ export default function PuntalSelector({ onCtaClick }: PuntalSelectorProps) {
 
         <Card className="shadow-lg border-primary/50 border-2 text-center">
           <CardHeader>
-            <CardTitle>¿Necesitas Ayuda o una Cotización?</CardTitle>
+            <CardTitle>¿Necesitas ayuda o una cotización?</CardTitle>
             <CardDescription>
               Nuestro equipo de expertos está listo para asesorarte.
             </CardDescription>
