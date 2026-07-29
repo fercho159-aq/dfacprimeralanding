@@ -42,8 +42,8 @@ const navLinks = [
 const clientes = [
   { name: 'BBVA', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/15/BBVA_Bancomer_logo.svg' },
   { name: 'Aeropuerto Internacional Felipe Ángeles', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/60/010aeropuerto-felipe-angeles-2.jpg' },
-  { name: 'Secretaría de Marina', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/SEMAR_Logo_2019.svg/2560px-SEMAR_Logo_2019.svg.png' },
-  { name: 'UNAM', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Escudo-UNAM-escalable.svg/1024px-Escudo-UNAM-escalable.svg.png' },
+  { name: 'Secretaría de Marina', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ed/SEMAR_Logo_2019.svg' },
+  { name: 'UNAM', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Escudo-UNAM-escalable.svg' },
 ];
 
 const beneficios = [
