@@ -164,7 +164,7 @@ const featuredProducts = [
     {
         name: 'Tirante tipo moño',
         description: 'Moño para cimbra de acero de alto carbón (5.8 mm), con capacidad de carga de 1,350 kg y resistencia máxima de 2,200 kg. COSTO POR ATADO.',
-        image: 'https://cimbrayaccesorios.com.mx/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-2.jpeg',
+        image: '/tirante-mono-10cm.jpeg',
         hint: 'formwork anchor',
         icon: Anchor
     },
