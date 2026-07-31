@@ -142,6 +142,7 @@ const certificaciones = [
 const featuredProducts = [
     {
         name: 'Junta Ortogonal 4 Tornillos en Chapa Prensada',
+        altText: 'Junta ortogonal de 4 tornillos en chapa prensada para andamio DFAC',
         description: 'Asegura uniones firmes y estables a 90 grados en andamios. Esencial para la seguridad estructural.',
         image: '/images/Productos/junta-ortogonal-4-tornillos.png',
         hint: 'scaffolding clamp',
@@ -149,6 +150,7 @@ const featuredProducts = [
     },
     {
         name: 'Junta Giratoria 2 Tornillos',
+        altText: 'Junta giratoria de 2 tornillos para uniones en ángulo variable DFAC',
         description: 'Permite uniones en ángulos variables con total seguridad. Perfecta para estructuras complejas y versátiles.',
         image: '/images/Productos/junta-giratoria-2-tornillos.png',
         hint: 'swivel coupler',
@@ -156,6 +158,7 @@ const featuredProducts = [
     },
     {
         name: 'Tirante tipo moño con rondana',
+        altText: 'Moño para cimbra con rondana de neopreno 20cm DFAC',
         description: 'Moño para cimbra con rondana de neopreno, elaborado con acero de alto carbón de 5.8 mm de diámetro, con capacidad de carga de 1,350 kg y resistencia máxima de 2,200 kg.',
         image: 'https://cimbrayaccesorios.com.mx/Image/MONO-DE-20CM-CON-NEOPRENO.png',
         hint: 'formwork tie',
@@ -163,6 +166,7 @@ const featuredProducts = [
     },
     {
         name: 'Tirante tipo moño',
+        altText: 'Tirante tipo moño de 10cm para cimbra de acero DFAC',
         description: 'Moño para cimbra de acero de alto carbón (5.8 mm), con capacidad de carga de 1,350 kg y resistencia máxima de 2,200 kg. COSTO POR ATADO.',
         image: '/tirante-mono-10cm.jpeg',
         hint: 'formwork anchor',
@@ -170,6 +174,7 @@ const featuredProducts = [
     },
     {
         name: 'Banda de PVC negra ojillada',
+        altText: 'Banda de PVC negra ojillada para juntas de construcción DFAC',
         description: 'Sello retenedor de agua con ojillos, negro de 25 ml, elaborado a base de cloruro de polivinilo en forma de cinta, con bulbo central y laterales estriados.',
         image: 'https://cimbrayaccesorios.com.mx/Image/BOJN4-3.jpg',
         hint: 'pvc waterstop',
@@ -177,6 +182,7 @@ const featuredProducts = [
     },
     {
         name: 'Viga H-20 para Cimbra',
+        altText: 'Viga H-20 de madera para cimbra con tapón protector DFAC',
         description: 'Fabricada con madera de alta calidad y un diseño robusto, nuestra viga H-20 garantiza la máxima eficiencia y seguridad en sus proyectos de construcción. El tapón protector integrado aumenta su durabilidad.',
         image: '/images/Productos/viga-h20.jpeg',
         hint: 'h20 beam',
@@ -224,12 +230,12 @@ const testimonials = [
 ];
 
 const galleryImages = [
-    { src: '/images/Galeria/puntales-almacen-1.jpeg', alt: 'Puntales en obra de gran altura', hint: 'construction site', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
-    { src: '/images/Galeria/puntales-almacen-2.jpeg', alt: 'Almacén de puntales metálicos', hint: 'construction equipment', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.06 PM.jpeg', alt: 'Detalle de puntal de acero reforzado', hint: 'steel props', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.05 PM.jpeg', alt: 'Trabajadores ajustando puntales', hint: 'construction workers', className: 'col-span-12 sm:col-span-6 h-80' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.04 PM.jpeg', alt: 'Vista panorámica de cimbra con puntales', hint: 'formwork structure', className: 'col-span-12 sm:col-span-6 h-80' },
-    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.03 PM.jpeg', alt: 'Puntales listos para entrega', hint: 'building materials', className: 'col-span-12 h-[26rem]' },
+    { src: '/images/Galeria/puntales-almacen-1.jpeg', alt: 'Puntales telescópicos DFAC instalados en obra de gran altura en Querétaro', hint: 'construction site', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
+    { src: '/images/Galeria/puntales-almacen-2.jpeg', alt: 'Almacén de puntales metálicos DFAC listos para distribución', hint: 'construction equipment', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.06 PM.jpeg', alt: 'Detalle de puntal de acero reforzado con sistema anti aplastamiento DFAC', hint: 'steel props', className: 'col-span-12 sm:col-span-6 md:col-span-4 h-72' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.05 PM.jpeg', alt: 'Trabajadores instalando puntales telescópicos en cimbra de construcción', hint: 'construction workers', className: 'col-span-12 sm:col-span-6 h-80' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.04 PM.jpeg', alt: 'Vista panorámica de estructura de cimbra con puntales DFAC', hint: 'formwork structure', className: 'col-span-12 sm:col-span-6 h-80' },
+    { src: '/images/Galeria/WhatsApp Image 2025-08-27 at 1.27.03 PM.jpeg', alt: 'Puntales para cimbra DFAC embalados y listos para entrega inmediata en Querétaro', hint: 'building materials', className: 'col-span-12 h-[26rem]' },
 ];
 
 export default function Home() {
@@ -267,7 +273,7 @@ export default function Home() {
       <header className="py-4 px-4 md:px-8 border-b border-border/40 bg-background/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <a href="#inicio" onClick={(e) => handleNavLinkClick(e, '#inicio')} className="flex items-center gap-3">
-            <Image src="/images/dfac-logo-queretaro.png" alt="DFAC Accesorios para Cimbras Logo" width={256} height={112} className="h-10 w-auto" />
+            <Image src="/images/dfac-logo-queretaro.png" alt="Logo DFAC Accesorios para Cimbra Querétaro" width={256} height={112} className="h-10 w-auto" />
             <span className="sr-only">DFAC Accesorios para Cimbras</span>
           </a>
           <nav className="hidden xl:flex items-center gap-4">
@@ -327,7 +333,7 @@ export default function Home() {
            <div className="relative w-full h-screen">
               <Image
                   src="/images/4c05f0c3-bb8a-4eed-a528-2f71b8b52594.jpg"
-                  alt="Puntales Metálicos en Obra"
+                  alt="Puntales telescópicos metálicos DFAC en obra de construcción en Querétaro"
                   fill
                   className="object-cover"
                   data-ai-hint="construction site"
@@ -340,7 +346,7 @@ export default function Home() {
                           ¡Entrega garantizada en menos de 24 horas!
                       </div>
                       <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
-                          Tus materiales de <span className="text-accent">construcción</span> en tiempo récord
+                          Puntales y Accesorios para <span className="text-accent">Cimbra</span> en Querétaro
                       </h1>
                       <p className="mt-4 text-base md:text-xl text-white/80 max-w-3xl mx-auto">
                           Más de 10 años distribuyendo herramientas y accesorios para la construcción. Calidad profesional con la rapidez que tu proyecto necesita.
@@ -402,7 +408,7 @@ export default function Home() {
                                 <div className="relative w-full aspect-[3/2]">
                                     <Image
                                         src={product.image}
-                                        alt={product.name}
+                                        alt={product.altText || product.name}
                                         fill
                                         className="object-contain p-6"
                                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -631,7 +637,7 @@ export default function Home() {
                   <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/4">
                     <div className="p-4">
                       <Card className="flex items-center justify-center p-6 h-32 bg-background">
-                         <Image src={cliente.logo} alt={cliente.name} width={150} height={60} className="object-contain max-h-full max-w-full" data-ai-hint="company logo" />
+                         <Image src={cliente.logo} alt={`Logo de ${cliente.name} – cliente de DFAC`} width={150} height={60} className="object-contain max-h-full max-w-full" data-ai-hint="company logo" />
                       </Card>
                     </div>
                   </CarouselItem>
@@ -664,7 +670,7 @@ export default function Home() {
         <div className="container mx-auto py-8 px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left items-start">
             <div className="md:col-span-1">
-               <Image src="/images/dfac-logo-queretaro.png" alt="DFAC Accesorios para Cimbras Logo" width={256} height={112} className="h-10 w-auto mx-auto md:mx-0" />
+               <Image src="/images/dfac-logo-queretaro.png" alt="Logo DFAC Accesorios para Cimbra Querétaro" width={256} height={112} className="h-10 w-auto mx-auto md:mx-0" />
               <p className="text-sm mt-4">Prol. Bernardo Quintana 2481, Bodega 15, Felipe Carrillo Puerto, 76113 Santiago de Querétaro, Qro.</p>
               <p className="text-sm">ventas@cimbrayaccesorios.com.mx</p>
               <div className="mt-4 rounded-lg overflow-hidden border border-border/50 h-[180px]">

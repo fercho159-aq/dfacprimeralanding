@@ -1,16 +1,75 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from '@/lib/utils';
 import Script from 'next/script';
 
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+
 export const metadata: Metadata = {
-  title: 'DFAC Accesorios para Cimbras – Selector de Puntales',
-  description: 'Selector Interactivo de Puntales de Acero para Construcción. Encuentra el modelo y la carga máxima para tu proyecto.',
-  keywords: ['puntales', 'cimbras', 'construcción', 'accesorios', 'DFAC', 'carga máxima'],
+  title: {
+    default: 'Puntales para Cimbra en Querétaro | Venta, Renta y Entrega – DFAC',
+    template: '%s | DFAC Accesorios para Cimbra',
+  },
+  description: 'Puntales telescópicos certificados UNE-EN 1065. Venta, renta y entrega inmediata en Querétaro. Calculadora de carga en línea. Más de 12 años de experiencia.',
+  metadataBase: new URL('https://puntales.mx'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Puntales para Cimbra en Querétaro | DFAC',
+    description: 'Puntales telescópicos certificados, accesorios para cimbra y entrega inmediata en Querétaro. Cotiza ahora.',
+    url: 'https://puntales.mx',
+    siteName: 'DFAC Accesorios para Cimbra',
+    locale: 'es_MX',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Puntales para Cimbra en Querétaro | DFAC',
+    description: 'Puntales telescópicos certificados, accesorios para cimbra y entrega inmediata en Querétaro.',
+  },
   verification: {
     google: 'VcHiJDttxnnmOnWj3cIRHbGRTyJvEMO2iKMqcroZ_a0',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'DFAC Accesorios para Cimbra – Querétaro',
+  description: 'Venta y renta de puntales telescópicos, cuñas, silletas, desmoldante y accesorios para cimbra en Querétaro.',
+  url: 'https://puntales.mx',
+  telephone: ['+524422517169', '+524422517168', '+524421550415'],
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Querétaro',
+    addressRegion: 'QRO',
+    addressCountry: 'MX',
+  },
+  areaServed: {
+    '@type': 'State',
+    name: 'Querétaro',
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '18:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '09:00',
+      closes: '14:00',
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -19,8 +78,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className={inter.variable}>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -42,14 +105,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             gtag('config', 'G-KLDB6HS5TB');
           `}
         </Script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("font-body antialiased min-h-screen")}>
         {children}
         <Toaster />
-        <Script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js" async />
       </body>
     </html>
   );

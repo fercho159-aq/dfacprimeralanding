@@ -12,9 +12,16 @@ const TEL = '+524422517169';
 const TEL_DISPLAY = '442 251 7169';
 
 export const metadata: Metadata = {
-  title: 'Construcción con Puntales | DFAC Accesorios para Cimbra',
+  title: 'Puntales Metálicos para Construcción | Venta y Renta en Querétaro',
   description:
-    'Puntales metálicos certificados para construcción: telescópicos, reforzados y extra fuertes. Diferentes capacidades de carga y altura. Asesoría y cotización inmediata.',
+    'Puntales telescópicos certificados UNE-EN 1065 para construcción: ligeros, reforzados y extra fuertes. Capacidades de carga verificadas. Asesoría y cotización inmediata en Querétaro.',
+  alternates: {
+    canonical: '/construccion-con-puntales',
+  },
+  openGraph: {
+    title: 'Puntales Metálicos para Construcción | DFAC Querétaro',
+    description: 'Puntales telescópicos certificados con tabla de carga verificada. Venta, renta y entrega inmediata.',
+  },
 };
 
 const beneficios = [
@@ -170,7 +177,7 @@ export default function ConstruccionConPuntalesPage() {
       <header className="sticky top-0 z-40 bg-background/95 backdrop-blur border-b">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/">
-            <Image src="/images/dfac-logo-queretaro.png" alt="DFAC Accesorios para Cimbras Logo" width={256} height={112} className="h-10 w-auto" />
+            <Image src="/images/dfac-logo-queretaro.png" alt="Logo DFAC Accesorios para Cimbra Querétaro" width={256} height={112} className="h-10 w-auto" />
           </Link>
           <Link href="/" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
             <ArrowLeft className="h-4 w-4" /> Volver al inicio
@@ -204,7 +211,7 @@ export default function ConstruccionConPuntalesPage() {
           <div className="relative h-[340px] md:h-[420px] bg-white rounded-xl shadow-lg overflow-hidden">
             <Image
               src="/images/puntales/b50-281-500.jpg"
-              alt="Puntal metálico extensible DFAC"
+              alt="Puntal metálico telescópico extensible DFAC para construcción y cimbra"
               fill
               className="object-contain p-8"
               priority
@@ -254,7 +261,7 @@ export default function ConstruccionConPuntalesPage() {
             {modelos.map((m) => (
               <Card key={m.nombre} className="flex flex-col overflow-hidden shadow-lg hover:shadow-primary/20 transition-shadow">
                 <div className="relative h-[240px] bg-white">
-                  <Image src={m.imagen} alt={m.nombre} fill className="object-contain p-4" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+                  <Image src={m.imagen} alt={`${m.nombre} – puntal telescópico certificado DFAC`} fill className="object-contain p-4" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
                 </div>
                 <CardContent className="p-6 flex flex-col flex-grow">
                   <h3 className="font-bold text-lg mb-3">{m.nombre}</h3>
@@ -344,7 +351,7 @@ export default function ConstruccionConPuntalesPage() {
           <div className="relative h-[320px] bg-white rounded-xl shadow-lg overflow-hidden order-last md:order-first">
             <Image
               src="/images/puntales/ligero-180-320.jpg"
-              alt="Puntal telescópico DFAC para apuntalamiento"
+              alt="Puntal telescópico ligero DFAC 1.80-3.00m para apuntalamiento de cimbra"
               fill
               className="object-contain p-8"
               sizes="(max-width: 768px) 100vw, 50vw"
