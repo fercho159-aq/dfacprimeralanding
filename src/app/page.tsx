@@ -243,6 +243,7 @@ export default function Home() {
   const catalogPdfUrl = "/archivos/CATALOGO-2026.pdf";
   const [isUrgentModalOpen, setIsUrgentModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [expandedImage, setExpandedImage] = useState<{ src: string; alt: string } | null>(null);
   const [currentYear, setCurrentYear] = useState<number | null>(null);
 
   useEffect(() => {
@@ -404,7 +405,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {featuredProducts.map((product, index) => (
                         <Card key={index} className="overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                            <CardHeader className="p-0 bg-white">
+                            <CardHeader className="p-0 bg-white cursor-pointer" onClick={() => setExpandedImage({ src: product.image, alt: product.altText || product.name })}>
                                 <div className="relative w-full aspect-[3/2]">
                                     <Image
                                         src={product.image}
@@ -738,6 +739,23 @@ export default function Home() {
 
       <ContactModal isOpen={isModalOpen} onOpenChange={setIsModalOpen} />
       <UrgentMaterialModal isOpen={isUrgentModalOpen} onOpenChange={setIsUrgentModalOpen} />
+
+      {expandedImage && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={() => setExpandedImage(null)}>
+          <button className="absolute top-4 right-4 text-white hover:text-gray-300 z-50" onClick={() => setExpandedImage(null)}>
+            <X className="h-8 w-8" />
+          </button>
+          <div className="relative w-full max-w-4xl max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+            <Image
+              src={expandedImage.src}
+              alt={expandedImage.alt}
+              width={1200}
+              height={800}
+              className="object-contain w-full h-auto max-h-[90vh] rounded-lg"
+            />
+          </div>
+        </div>
+      )}
        <div className="fixed bottom-4 right-4 z-40 flex flex-col gap-3">
         <Button
           asChild
