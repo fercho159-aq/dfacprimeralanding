@@ -160,7 +160,7 @@ const featuredProducts = [
         name: 'Tirante tipo moño con rondana',
         altText: 'Moño para cimbra con rondana de neopreno 20cm DFAC',
         description: 'Moño para cimbra con rondana de neopreno, elaborado con acero de alto carbón de 5.8 mm de diámetro, con capacidad de carga de 1,350 kg y resistencia máxima de 2,200 kg.',
-        image: 'https://cimbrayaccesorios.com.mx/Image/MONO-DE-20CM-CON-NEOPRENO.png',
+        image: '/images/WhatsApp Image 2026-08-10 at 12.40.32 PM.jpeg',
         hint: 'formwork tie',
         icon: Anchor
     },
