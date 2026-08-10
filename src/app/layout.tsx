@@ -45,7 +45,7 @@ const jsonLd = {
   name: 'DFAC Accesorios para Cimbra – Querétaro',
   description: 'Venta y renta de puntales telescópicos, cuñas, silletas, desmoldante y accesorios para cimbra en Querétaro.',
   url: 'https://puntales.mx',
-  telephone: ['+524422517169', '+524422517168', '+524421550415'],
+  telephone: ['+524422517169', '+524422517168', '+524421550415', '+525546134738'],
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Querétaro',

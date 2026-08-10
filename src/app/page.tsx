@@ -288,7 +288,7 @@ export default function Home() {
               Solicitar cotización
             </Button>
             <div className="flex gap-4 items-center">
-              <a href="https://www.facebook.com/profile.php?id=100083655136054" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100083655130654" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <FacebookIcon className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </a>
@@ -314,7 +314,7 @@ export default function Home() {
                 Solicitar cotización
               </Button>
                <div className="flex gap-4 items-center justify-center mt-4">
-                <a href="https://www.facebook.com/profile.php?id=100083655136054" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=100083655130654" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <FacebookIcon className="h-6 w-6" />
                   <span className="sr-only">Facebook</span>
                 </a>
@@ -672,7 +672,7 @@ export default function Home() {
             <div className="md:col-span-1">
                <Image src="/images/dfac-logo-queretaro.png" alt="Logo DFAC Accesorios para Cimbra Querétaro" width={256} height={112} className="h-10 w-auto mx-auto md:mx-0" />
               <p className="text-sm mt-4">Prol. Bernardo Quintana 2481, Bodega 15, Felipe Carrillo Puerto, 76113 Santiago de Querétaro, Qro.</p>
-              <p className="text-sm">ventas@cimbrayaccesorios.com.mx</p>
+              <p className="text-sm">Ventas.qro.dfac@gmail.com</p>
               <div className="mt-4 rounded-lg overflow-hidden border border-border/50 h-[180px]">
                 <iframe
                   title="Ubicación de DFAC Querétaro en Google Maps"
@@ -710,12 +710,16 @@ export default function Home() {
                   <Phone className="w-4 h-4" />
                   <span>(442) 155 0415</span>
                 </a>
+                 <a href="tel:+525546134738" className="flex items-center gap-2 hover:text-primary transition-colors">
+                  <Phone className="w-4 h-4" />
+                  <span>(55) 4613 4738</span>
+                </a>
               </div>
             </div>
              <div>
               <h3 className="font-bold text-lg mb-2">Síguenos</h3>
               <div className="flex justify-center md:justify-start gap-4">
-                <a href="https://www.facebook.com/profile.php?id=100083655136054" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=100083655130654" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <FacebookIcon className="h-6 w-6" />
                   <span className="sr-only">Facebook</span>
                 </a>
