@@ -36,6 +36,7 @@ const navLinks = [
   { href: '#testimonios', label: 'Testimonios' },
   { href: '#nosotros', label: 'Nosotros' },
   { href: '#clientes', label: 'Clientes' },
+  { href: '/blog', label: 'Blog' },
   { href: '#contacto', label: 'Contacto' },
 ];
 
@@ -260,6 +261,11 @@ export default function Home() {
   }, []);
 
   const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!href.startsWith('#')) {
+      // Regular page navigation — let the browser handle it
+      setIsMenuOpen(false);
+      return;
+    }
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
